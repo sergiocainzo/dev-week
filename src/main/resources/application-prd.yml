@@ -1,15 +1,15 @@
 spring:
   datasource:
-    url: jdbc:postgresql://shinkansen.proxy.rlwy.net:58912/railway
+    url: jdbc:postgresql://caboose.proxy.rlwy.net:30534/railway
     username: ${PGUSER}
     password: ${PGPASSWORD}
     driver-class-name: org.postgresql.Driver
 
-  server:
-      port:${PORT:8080}
+#  server:
+#    port: ${PORT:8080}
 
   jpa:
     open-in-view: false
     hibernate:
-      ddl-auto: validate
+      ddl-auto: validate # validate | update | crete | crete-drop
       dialect: org.hibernate.dialect.PostgreSQLDialect
