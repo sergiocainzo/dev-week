@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://shinkansen.proxy.rlwy.net:58912/railway
+    username: postgres
+    password: ${PGPASSWORD}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+      dialect: org.hibernate.dialect.PostgreSQLDialect
